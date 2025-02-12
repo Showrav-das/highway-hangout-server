@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.qcqim.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.w5uf7.mongodb.net/task-management?retryWrites=true&w=majority&appName=Cluster0`;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
